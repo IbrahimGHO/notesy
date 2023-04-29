@@ -15,6 +15,7 @@ function Home   ()  {
 
         
     <NotesList notes={notes} title = "All notes" /> 
+    
     {isloadig &&  <div className="spinner-container">
                 <div className="loading-spinner"></div>
                 <p className='paddings'>loading...</p>
