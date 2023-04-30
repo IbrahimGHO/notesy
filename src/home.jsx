@@ -14,8 +14,8 @@ function Home   ()  {
 <div className="home">
 
         
-    <NotesList notes={notes} title = "All notes" /> 
     
+    <NotesList notes={notes} title = "All notes" /> 
     {isloadig &&  <div className="spinner-container">
                 <div className="loading-spinner"></div>
                 <p className='paddings'>loading...</p>

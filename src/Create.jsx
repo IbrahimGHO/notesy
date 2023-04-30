@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router';
 
 export default function Create() {
 const [title , setTitle] = useState('')
 const [body , setBody] = useState('')
     const [loading , setloading]= useState(false);
-
+  const navigate =useNavigate()
 
 
 const handleSubmit = (e)=>{
@@ -18,7 +19,8 @@ const handleSubmit = (e)=>{
     headers: {"Content-Type": "application/json"},
     body: JSON.stringify(note)
   }).then(()=>{
-    setloading(false)  
+    setloading(false)
+    navigate('/')
   })
     
 }
