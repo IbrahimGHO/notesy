@@ -5,7 +5,7 @@ export default function Create() {
 const [title , setTitle] = useState('')
 const [body , setBody] = useState('')
     const [loading , setloading]= useState(false);
-  const navigate =useNavigate()
+    const navigate =useNavigate()
 
 
 const handleSubmit = (e)=>{
@@ -39,6 +39,7 @@ const handleSubmit = (e)=>{
       value={title}
       onChange={(e)=> setTitle(e.target.value)}
       />
+    
 
       <label >note body:</label>
       <textarea name="" id="" cols="30" rows="10" required
@@ -50,9 +51,5 @@ const handleSubmit = (e)=>{
       
     </form>
     </div>
-
-    
-
-    
   )
 }

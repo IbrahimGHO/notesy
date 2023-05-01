@@ -6,6 +6,7 @@ import Navbar from './navbar';
 import Home from './home';
 import Create from './Create';
 import NotesDetails from './NotesDetails';
+import NotFound from './notFound';
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
       
           <Route path="/note/:id" element={ <NotesDetails/>}/>
 
+
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
 
       </div>
